@@ -2,7 +2,7 @@ require "uri"
 
 module Imagga
 class ContentAPI
-    basePath = "https://api.imagga.com/v1"
+    basePath = "https://api.imagga.com/v2"
     # apiInvoker = APIInvoker
 
     

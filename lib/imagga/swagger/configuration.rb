@@ -10,7 +10,7 @@ module Swagger
       @format = 'json'
       @scheme = 'https'
       @host = 'api.imagga.com:443'
-      @base_path = '/v1'
+      @base_path = '/v2'
       @user_agent = 'Swagger/Ruby/0.1.0/beta'
       @inject_format = false
       @force_ending_format = false

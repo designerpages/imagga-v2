@@ -2,7 +2,7 @@ require "uri"
 
 module Imagga
 class CroppingsAPI
-    basePath = "https://api.imagga.com/v1"
+    basePath = "https://api.imagga.com/v2"
     # apiInvoker = APIInvoker
 
     
