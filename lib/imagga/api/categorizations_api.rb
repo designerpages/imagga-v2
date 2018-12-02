@@ -2,7 +2,7 @@ require "uri"
 
 module Imagga
 class CategorizationsAPI
-    basePath = "https://api.imagga.com/v1"
+    basePath = "https://api.imagga.com/v2"
     # apiInvoker = APIInvoker
 
     
@@ -29,8 +29,8 @@ class CategorizationsAPI
       options.merge!(required_options)
 
       #resource path
-      path = "/categorizations/{categorizer_id}".sub('{' + 'categorizer_id' + '}', categorizer_id.to_s)
-      
+      #path = "/categorizations/{categorizer_id}".sub('{' + 'categorizer_id' + '}', categorizer_id.to_s)
+      path = "/categories/{categorizer_id}".sub('{' + 'categorizer_id' + '}', categorizer_id.to_s)
 
       
       # pull querystring keys from options
