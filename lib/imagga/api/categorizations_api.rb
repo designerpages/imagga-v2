@@ -14,13 +14,14 @@ class CategorizationsAPI
     # @option opts [string] :content Content id received by uploading an image to the content endpoint
     # @return CategorizationResponse
     def self.categorize (categorizer_id,opts={})
-      query_param_keys = [:'url',:'content']
+      query_param_keys = [:'image_url',:'content']
 
       # verify existence of params
       raise "categorizer_id is required" if categorizer_id.nil?
       # set default values and merge with input
       options = {
-      :'url' => nil,
+      #:'url' => nil,
+      :'image_url' => nil,
         :'content' => nil}.merge(opts)
 
       required_options = {
